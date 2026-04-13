@@ -1,0 +1,44 @@
+{
+  "clientId": "client-9mal0yposmnxa2dzj",
+  "clientName": "dwdfe",
+  "environment": "development",
+  "gitBranch": "client/dwdfe-development",
+  "pollingInterval": 300,
+  "deployment": {
+    "autoMigrate": true,
+    "backupBeforeMigrate": true,
+    "rollbackOnFailure": true,
+    "maxRollbackAttempts": 3,
+    "testBeforeDeployment": false
+  },
+  "notifications": {
+    "email": "solankimadhur65@gmail.com",
+    "webhook": "",
+    "slack": "",
+    "onSuccess": false,
+    "onFailure": true,
+    "onRollback": true
+  },
+  "monitoring": {
+    "healthCheckPort": 3636,
+    "logLevel": "info",
+    "logRotation": "daily",
+    "metricsEnabled": false,
+    "alerting": false
+  },
+  "backup": {
+    "enabled": true,
+    "retention": 30,
+    "s3Bucket": "",
+    "compressionEnabled": false
+  },
+  "security": {
+    "enableSsl": false,
+    "sslCertPath": "",
+    "sslKeyPath": "",
+    "firewallRules": false,
+    "auditLogging": false
+  },
+  "contactEmail": "solankimadhur65@gmail.com",
+  "timezone": "UTC"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "postgresql",
+  "connection": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "client-9mal0yposmnxa2dzj",
+    "user": "deployment_user",
+    "ssl": true
+  },
+  "pool": {
+    "min": 2,
+    "max": 10
+  },
+  "timeout": 30000
+}

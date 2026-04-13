@@ -1,0 +1,47 @@
+{
+  "name": "db-deployment-agent-client-9mal0yposmnxa2dzj",
+  "version": "1.0.0",
+  "description": "Isolated database deployment agent for dwdfe",
+  "main": "client-agent/deployment-agent.js",
+  "scripts": {
+    "start": "node client-agent/deployment-agent.js",
+    "dev": "node client-agent/deployment-agent.js",
+    "health": "curl -f http://localhost:3636/health || echo \"Agent not responding\"",
+    "status": "curl -f http://localhost:3636/status || echo \"Agent not responding\"",
+    "logs": "tail -f logs/agent.log",
+    "clean": "rm -rf logs/*.log",
+    "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "keywords": [
+    "database",
+    "deployment",
+    "migration",
+    "agent",
+    "postgresql",
+    "development"
+  ],
+  "author": {
+    "name": "solankimadhur65@gmail.com",
+    "email": "solankimadhur65@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viriminfo/int_256_Kratinn_database-deployment-system.git",
+    "branch": "client/dwdfe-development"
+  },
+  "config": {
+    "clientId": "client-9mal0yposmnxa2dzj",
+    "clientName": "dwdfe",
+    "environment": "development",
+    "healthCheckPort": 3636
+  }
+}
